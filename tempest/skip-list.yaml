@@ -109,3 +109,4 @@ tempest.scenario.test_network_v6.TestGettingAddress.test_multi_prefix_slaac[comp
 tempest.scenario.test_network_v6.TestGettingAddress.test_slaac_from_os[compute,id-2c92df61-29f0-4eaa-bee3-7c65bef62a43,network,slow]: Contrail specific problem. See https://bugs.launchpad.net/juniperopenstack/+bug/1604568.
 tempest.scenario.test_security_groups_basic_ops.TestSecurityGroupsBasicOps.test_port_security_disable_security_group[compute,id-7c811dcc-263b-49a3-92d2-1b4d8405f50c,network]: Contrail specific problem. See https://bugs.launchpad.net/juniperopenstack/+bug/1632961.
 tempest.scenario.test_stamp_pattern.TestStampPattern.test_stamp_pattern[compute,id-10fd234a-515c-41e5-b092-8323060598c5,image,network,volume]: See https://bugs.launchpad.net/nova/+bug/1664793.
+heat_tempest_plugin.tests.api.test_heat_api.resources_create_stack_with_resources.test_request[id-947be7b2-503d-41f5-9843-61be50954f13]: skip 
