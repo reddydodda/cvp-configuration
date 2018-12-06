@@ -50,6 +50,7 @@ tempest_configuration () {
     rally verify add-verifier-ext --version 7a4bff728fbd8629ec211669264ab645aa921e2b --source https://github.com/openstack/telemetry-tempest-plugin
     rally verify add-verifier-ext --version 12b770e923060f5ef41358c37390a25be56634f0 --source https://github.com/openstack/heat-tempest-plugin
     pip install --force-reinstall python-cinderclient==3.2.0
+    pip install --force-reinstall tox
     unset https_proxy
   fi
   # supress tempest.conf display in console
