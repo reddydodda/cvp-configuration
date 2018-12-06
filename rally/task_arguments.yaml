@@ -1,14 +1,14 @@
 ---
 # Please, carefully review the list of variables and update their values.
 
-  image_name: "TestVM"
+  image_name: "testvm"
   flavor_name: "m1.tiny"
   availability_zone: nova
-  neutron_floating_network: "admin_floating_net" # str, external network for floating IP creation
-  nova_rebuild_to_image_name: "TestVM"
+  neutron_floating_network: "public" # str, external network for floating IP creation
+  nova_rebuild_to_image_name: "testvm"
   nova_rebuild_to_flavor_name: "m1.small"
   block_migration: true
-  volume_type: "volumes_lvm"
+  volume_type: "standard-iops"
 
 #============================
 # The variables below should not be changed if you are doing base line testing. Please, change it for customer specific tests only.
@@ -50,8 +50,8 @@
   num_instances_in_stack: 2
 
 # Parameters for Swift
-  swift_objects_per_container: 5 # number of objects to upload
-  swift_containers_per_tenant: 2 # will be executed before benchmarking
+#  swift_objects_per_container: 5 # number of objects to upload
+#  swift_containers_per_tenant: 2 # will be executed before benchmarking
 
 # Parameters for Cinder, Nova
   servers_per_tenant_before_benchmarking: 2
