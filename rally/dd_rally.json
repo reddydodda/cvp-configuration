@@ -1,5 +1,5 @@
 {% set flavor_name = flavor_name or "m1.medium" %}
-{% set image_name = image_name or "Ubuntu1404" %}
+{% set image_name = image_name or "Ubuntu" %}
 {% set ext_net_name = "floating" %}
 {% set script_file = script_file or "cvp-configuration/rally/instance_test.sh" %}
 {
