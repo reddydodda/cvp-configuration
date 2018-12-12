@@ -39,8 +39,8 @@ tempest_configuration () {
   fi
   if [ "$PROXY" == "offline" ]; then
     rally verify create-verifier --name tempest_verifier_$sub_name --type tempest --source $TEMPEST_REPO --system-wide --version $tempest_version
-    rally verify add-verifier-ext --source /var/lib/telemetry-tempest-plugin
-    rally verify add-verifier-ext --source /var/lib/heat-tempest-plugin
+    #rally verify add-verifier-ext --source /var/lib/telemetry-tempest-plugin
+    #rally verify add-verifier-ext --source /var/lib/heat-tempest-plugin
   else
     if [ -n "${PROXY}" ]; then
       export https_proxy=$PROXY
@@ -48,8 +48,9 @@ tempest_configuration () {
     apt-get update; apt-get install -y iputils-ping curl wget
     rally verify create-verifier --name tempest_verifier_$sub_name --type tempest --source $TEMPEST_REPO --version $tempest_version
     #rally verify add-verifier-ext --version 7a4bff728fbd8629ec211669264ab645aa921e2b --source https://github.com/openstack/telemetry-tempest-plugin
-    rally verify add-verifier-ext --version 12b770e923060f5ef41358c37390a25be56634f0 --source https://github.com/openstack/heat-tempest-plugin
+    #rally verify add-verifier-ext --version 12b770e923060f5ef41358c37390a25be56634f0 --source https://github.com/openstack/heat-tempest-plugin
     pip install --force-reinstall python-cinderclient==3.2.0
+    pip install --force-reinstall tox==2.3.1
     unset https_proxy
   fi
   # supress tempest.conf display in console
