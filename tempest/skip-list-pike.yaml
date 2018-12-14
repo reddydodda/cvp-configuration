@@ -27,3 +27,6 @@ tempest.api.compute.admin.test_server_diagnostics.ServerDiagnosticsV248Test.test
 tempest.api.compute.admin.test_server_diagnostics_negative.ServerDiagnosticsNegativeV248Test.test_get_server_diagnostics_by_non_admin[id-e84e2234-60d2-42fa-8b30-e2d3049724ac,negative]: cannot be verified. After microversion 2.36 os-networks nova api extension used in this tests is deprecated.
 tempest.api.compute.servers.test_novnc.NoVNCConsoleTestJSON.test_novnc[id-c640fdff-8ab4-45a4-a5d8-7e6146cbd0dc]: See https://bugs.launchpad.net/nova/+bug/1669468.
 tempest.api.compute.servers.test_servers.ServerShowV247Test.test_show_server[id-88b0bdb2-494c-11e7-a919-92ebcb67fe33]: cannot be verified. After microversion 2.36 os-networks nova api extension used in this tests is deprecated.
+tempest.api.volume.admin.test_snapshot_manage.SnapshotManageAdminTest.test_unmanage_manage_snapshot[id-0132f42d-0147-4b45-8501-cc504bbf7810]: skip snapshot.
+tempest.api.compute.admin.test_auto_allocate_network.AutoAllocateNetworkTest.test_server_create_no_allocate[id-5eb7b8fa-9c23-47a2-9d7d-02ed5809dd34]: skip shared network.
+tempest.api.compute.admin.test_auto_allocate_network.AutoAllocateNetworkTest.test_server_multi_create_auto_allocate[id-2e6cf129-9e28-4e8a-aaaa-045ea826b2a6]: skip shared network.
