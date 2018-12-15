@@ -32,4 +32,5 @@ tempest.api.compute.admin.test_auto_allocate_network.AutoAllocateNetworkTest.tes
 tempest.api.compute.admin.test_auto_allocate_network.AutoAllocateNetworkTest.test_server_multi_create_auto_allocate[id-2e6cf129-9e28-4e8a-aaaa-045ea826b2a6]: skip shared network.
 tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_update_instance_port_admin_state[compute,id-f5dfcc22-45fd-409f-954c-5bd500d7890b,network,slow]: skip public ip check.
 tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_mtu_sized_frames[compute,id-b158ea55-472e-4086-8fa9-c64ac0c6c1d0,network,slow]: skip mtu check.
-tempest.api.compute.servers.test_device_tagging.DeviceTaggingTest.test_device_tagging[network,volume,image,id-a2e65a6c-66f1-4442-aaa8-498c31778d96]: skip device.
+tempest.api.compute.servers.test_device_tagging.DeviceTaggingTest.test_device_tagging[network,volume,image,id-a2e65a6c-66f1-4442-aaa8-498c31778d96,slow]: skip device.
+tempest.api.compute.servers.test_device_tagging.DeviceTaggingTestV2_42.test_device_tagging[id-a2e65a6c-66f1-4442-aaa8-498c31778d96,image,network,volume]: skip device
